@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>아산시 날씨 대시보드 - 탕정면 & 배방읍</title>
+    <link rel="stylesheet" href="css/style.css">
     <style>
         * {
             margin: 0;
@@ -39,6 +40,27 @@
         header p {
             font-size: 1.1rem;
             opacity: 0.9;
+        }
+
+        nav {
+            text-align: center;
+            margin-bottom: 30px;
+        }
+
+        nav a {
+            margin: 0 15px;
+            text-decoration: none;
+            color: white;
+            font-weight: bold;
+            padding: 10px 20px;
+            background: rgba(255,255,255,0.2);
+            border-radius: 25px;
+            transition: all 0.3s ease;
+        }
+
+        nav a:hover {
+            background: rgba(255,255,255,0.3);
+            transform: translateY(-2px);
         }
 
         .weather-grid {
@@ -228,6 +250,14 @@
             <h1>🌤️ 아산시 날씨 대시보드</h1>
             <p>탕정면과 배방읍의 실시간 날씨 정보</p>
         </header>
+
+        <nav>
+            <a href="index.html">🏠 홈</a>
+            <a href="about.html">📖 소개</a>
+            <a href="contact.html">📞 연락처</a>
+            <a href="sub-pages/page1.html">📄 서브페이지 1</a>
+            <a href="sub-pages/page2.html">📄 서브페이지 2</a>
+        </nav>
 
         <div class="weather-grid">
             <!-- 탕정면 날씨 카드 -->
